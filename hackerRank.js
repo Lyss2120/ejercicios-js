@@ -14,7 +14,7 @@
  */
 
 function plusMinus(arr) {
-    // Write your code here.. si el signo es menos o positivo escribirlo y si es cero se deduce entre cuantos negativos y positivos hay
+    // Write your code here.. 
 
     let positive= 0;
     let negative= 0; 
@@ -34,3 +34,11 @@ for (let i=0; i<arr.length; i++){
     console.log(fraccNegative.toFixed(6))
     console.log(fraccZero.toFixed(6))       
 }
+
+
+
+
+
+
+
+
