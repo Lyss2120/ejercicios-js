@@ -53,6 +53,31 @@ function staircase(n) {
 }
 
 
+/*
+ * Complete the 'miniMaxSum' function below.
+ *
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+function miniMaxSum(arr) {
+// Write your code here min=arr[0],arr[3] max=arr[1]arr[4]minsum += arr[i] tambien se podría usar reduce((acc, item) =>{return acc+= item})
+
+arr.sort()
+let minsum = 0;
+let maxsum = 0;
+
+//0-3 index
+for(let i=0; i<arr.length-1; i++){ 
+    minsum += arr[i]    
+}
+//1-4 index
+for(let i=1; i<=arr.length-1; i++){ 
+    maxsum += arr[i]
+}     
+console.log(minsum, maxsum)
+}
+
+
 
 
 
