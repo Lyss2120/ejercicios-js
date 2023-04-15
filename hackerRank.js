@@ -39,6 +39,27 @@ for (let i=0; i<arr.length; i++){
 
 
 
+/*
+ * Complete the 'staircase' function below.
+ *str.repeat(cantidad)
+ * The function accepts INTEGER n as parameter.
+ */
+
+function staircase(n) {
+    // Write your code here. mientras i sube espacio baja. 
+    //5 espacios #, 4 espacios ##, 3 espacios ###
+    for (let i=1; i<=n; i++){  
+    console.log(' '.repeat(n-i)+'#'.repeat(i))
+}      
+}
+
+
+
+
+
+
+
+
 
 
 
