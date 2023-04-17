@@ -36,9 +36,6 @@ for (let i=0; i<arr.length; i++){
 }
 
 
-
-
-
 /*
  * Complete the 'staircase' function below.
  *str.repeat(cantidad)
@@ -55,7 +52,7 @@ function staircase(n) {
 
 /*
  * Complete the 'miniMaxSum' function below.
- *
+ * suma los valores más bajos y los más altos
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
@@ -77,6 +74,25 @@ for(let i=1; i<=arr.length-1; i++){
 console.log(minsum, maxsum)
 }
 
+/*
+ * Complete the 'birthdayCakeCandles' function below.
+ *  You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY candles as parameter.
+ */
+function birthdayCakeCandles(candles) {
+    // Write your code here
+//let tallcandle1= candles.sort()candles.pop()//ordena la lista de -+ y saca el ultimo que tmb es el mayor valor o ...
+let tallcandle= Math.max(...candles);//saca el mayor valor de la lista con spread operator
+let total=0;
+
+for(let i=0; i<candles.length; i++){
+    if (candles[i] == tallcandle){
+    total++
+}}
+return total
+console.log(total)
+}
 
 
 
